@@ -1,0 +1,144 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Simplex Fibre isolator"
+Date ""
+Rev "A"
+Comp "PJO"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:DB9_Female J1
+U 1 1 60369E1B
+P 1800 2300
+F 0 "J1" H 1718 2992 50  0000 C CNN
+F 1 "DB9_Female" H 1718 2901 50  0000 C CNN
+F 2 "Connector_Dsub:DSUB-9_Female_EdgeMount_P2.77mm" H 1800 2300 50  0001 C CNN
+F 3 " ~" H 1800 2300 50  0001 C CNN
+	1    1800 2300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L hfbr-1515bz:HFBR-1515BZ J2
+U 1 1 6036D979
+P 3800 2400
+F 0 "J2" H 4130 2389 50  0000 L CNN
+F 1 "HFBR-1515BZ" H 4130 2298 50  0000 L CNN
+F 2 "fibre:HFBR-X515XZ" H 3800 1800 50  0001 C CNN
+F 3 "https://docs.broadcom.com/docs/AV02-4369EN" H 4000 2400 50  0001 C CNN
+	1    3800 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 6036E673
+P 2500 2300
+F 0 "R1" V 2293 2300 50  0000 C CNN
+F 1 "1k" V 2384 2300 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2430 2300 50  0001 C CNN
+F 3 "~" H 2500 2300 50  0001 C CNN
+	1    2500 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D1
+U 1 1 6036EB86
+P 2800 2600
+F 0 "D1" V 2754 2680 50  0000 L CNN
+F 1 "1N4148" V 2845 2680 50  0000 L CNN
+F 2 "Diode_THT:D_DO-15_P10.16mm_Horizontal" H 2800 2600 50  0001 C CNN
+F 3 "~" H 2800 2600 50  0001 C CNN
+	1    2800 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 6036F557
+P 2200 2900
+F 0 "#PWR01" H 2200 2650 50  0001 C CNN
+F 1 "GND" H 2205 2727 50  0000 C CNN
+F 2 "" H 2200 2900 50  0001 C CNN
+F 3 "" H 2200 2900 50  0001 C CNN
+	1    2200 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 6036F725
+P 2800 2900
+F 0 "#PWR02" H 2800 2650 50  0001 C CNN
+F 1 "GND" H 2805 2727 50  0000 C CNN
+F 2 "" H 2800 2900 50  0001 C CNN
+F 3 "" H 2800 2900 50  0001 C CNN
+	1    2800 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 6036F94B
+P 3250 2900
+F 0 "#PWR03" H 3250 2650 50  0001 C CNN
+F 1 "GND" H 3255 2727 50  0000 C CNN
+F 2 "" H 3250 2900 50  0001 C CNN
+F 3 "" H 3250 2900 50  0001 C CNN
+	1    3250 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 603738EF
+P 3700 2900
+F 0 "#PWR04" H 3700 2650 50  0001 C CNN
+F 1 "GND" H 3705 2727 50  0000 C CNN
+F 2 "" H 3700 2900 50  0001 C CNN
+F 3 "" H 3700 2900 50  0001 C CNN
+	1    3700 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 2300 2350 2300
+Wire Wire Line
+	2650 2300 2800 2300
+Wire Wire Line
+	2800 2450 2800 2300
+Connection ~ 2800 2300
+Wire Wire Line
+	2800 2300 3400 2300
+Wire Wire Line
+	2800 2750 2800 2900
+Wire Wire Line
+	3250 2900 3250 2500
+Wire Wire Line
+	3250 2500 3400 2500
+Wire Wire Line
+	3700 2800 3700 2850
+Wire Wire Line
+	3800 2800 3800 2850
+Wire Wire Line
+	3800 2850 3700 2850
+Connection ~ 3700 2850
+Wire Wire Line
+	3700 2850 3700 2900
+Wire Wire Line
+	2200 2900 2200 2700
+Wire Wire Line
+	2200 2700 2100 2700
+Wire Wire Line
+	2100 2200 2200 2200
+Wire Wire Line
+	2200 2200 2200 2400
+Wire Wire Line
+	2200 2400 2100 2400
+Wire Wire Line
+	2100 2500 2250 2500
+Wire Wire Line
+	2250 2500 2250 2000
+Wire Wire Line
+	2250 2000 2100 2000
+$EndSCHEMATC
